@@ -1,9 +1,9 @@
 # Face-Recognition-Attendance-Systems <br>
 
 ╔══════════════════════════════════════════════════════╗
-║          DIGITAL FACE ATTENDANCE SYSTEM             ║        <br>
+║          DIGITAL FACE ATTENDANCE SYSTEM             ║       
 ╚══════════════════════════════════════════════════════╝
-
+<br>
 💻 Technologies Used: <br>
    • Python <br>
    • MySQL <br>
