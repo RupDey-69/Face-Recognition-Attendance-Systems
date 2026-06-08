@@ -1,7 +1,7 @@
 # Face-Recognition-Attendance-Systems 
 
 ╔══════════════════════════════════════════════════════╗
-║          DIGITAL FACE ATTENDANCE SYSTEM             ║       
+║          DIGITAL FACE ATTENDANCE SYSTEM             ║
 ╚══════════════════════════════════════════════════════╝
 
 💻 Technologies Used: <br>
