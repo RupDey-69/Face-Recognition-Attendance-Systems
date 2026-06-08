@@ -1,39 +1,39 @@
 # Face-Recognition-Attendance-Systems <br>
 
 ╔══════════════════════════════════════════════════════╗
-║          DIGITAL FACE ATTENDANCE SYSTEM             ║
+║          DIGITAL FACE ATTENDANCE SYSTEM             ║        <br>
 ╚══════════════════════════════════════════════════════╝
 
-💻 Technologies Used:
-   • Python
-   • MySQL
-   • HTML
-   • CSS
-   • JavaScript
+💻 Technologies Used: <br>
+   • Python <br>
+   • MySQL <br>
+   • HTML <br>
+   • CSS <br>
+   • JavaScript  <br>
 
-🎯 Project Description:
-   An intelligent Face Recognition-based Attendance System
-   that automatically identifies students and records
-   attendance accurately, securely, and efficiently.
+🎯 Project Description:   <br>
+   Face Recognition-based Attendance System <br>
+   that automatically identifies students and records  <br>
+   attendance accurately, securely, and efficiently.  <br>
+ 
+👨‍💻 Developed By:   <br>
+   ✦ Rup Dey  <br>
+   ✦ Roni Sarkar <br>
+   CST Students (Diploma)  <br>
 
-👨‍💻 Developed By:
-   ✦ Rup Dey
-   ✦ Roni Sarkar
-   CST Students (Diploma)
+🚀 Key Features:  <br>
+   ✓ Face Recognition Attendance <br>
+   ✓ Automatic Attendance Marking   <br>
+   ✓ Student Data Management <br>
+   ✓ Attendance Reports <br>
+   ✓ Secure MySQL Database <br>
+   ✓ Responsive User Interface <br>
 
-🚀 Key Features:
-   ✓ Face Recognition Attendance
-   ✓ Automatic Attendance Marking
-   ✓ Student Data Management
-   ✓ Attendance Reports
-   ✓ Secure MySQL Database
-   ✓ Responsive User Interface
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <br>
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+        Made with using Python & Web Technologies <br>
 
-        Made with using Python & Web Technologies
+              © Rup Dey & Roni Sarkar <br>
+                   CST (Diploma) <br>
 
-              © Rup Dey & Roni Sarkar
-                   CST (Diploma)
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <br>
