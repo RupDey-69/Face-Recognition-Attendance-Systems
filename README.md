@@ -3,7 +3,7 @@
 ╔══════════════════════════════════════════════════════╗
 ║          DIGITAL FACE ATTENDANCE SYSTEM             ║       
 ╚══════════════════════════════════════════════════════╝
-<br>
+
 💻 Technologies Used: <br>
    • Python <br>
    • MySQL <br>
