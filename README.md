@@ -1,8 +1,5 @@
 # Face-Recognition-Attendance-Systems 
 
-+--------------------------------------------------+
-|          DIGITAL FACE ATTENDANCE SYSTEM          |
-+--------------------------------------------------+
 
 
 💻 Technologies Used: <br>
