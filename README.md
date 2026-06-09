@@ -29,9 +29,9 @@
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-        Made with using Python & Web Technologies <br>
+        Made with using Python & Web Technologies 
 
-              © Rup Dey & Roni Sarkar <br>
-                   CST (Diploma) <br>
+              © Rup Dey & Roni Sarkar 
+                   CST (Diploma) 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
