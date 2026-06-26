@@ -45,26 +45,26 @@
 
 face-attendance-system/ <br>
 │
-├── Image/                   # Student face images for recognition <br>
-│   └── Rup.jpg              # Sample registered student image <br>
+├── Image/                                  # Student face images for recognition <br>
+│   └── Rup.jpg                             # Sample registered student image <br>
 │<br>
-├── static/                  # Frontend assets <br>
-│   ├── script.js            # Client-side JavaScript <br>
-│   └── style.css            # Stylesheetb <br>
+├── static/                                 # Frontend assets <br>
+│   ├── script.js                           # Client-side JavaScript <br>
+│   └── style.css                           # Stylesheetb <br>
 │ <br>
-├── templates/               # HTML templates (Jinja2)  <br>
-│   ├── index.html           # Home / landing page <br>
-│   ├── login.html           # Admin login page <br>
-│   ├── register.html        # Admin registration page <br>
-│   ├── admin.html           # Admin dashboard <br>
-│   ├── students.html        # Student list & management  <br>
-│   └── configure_camera.html # Camera configuration panel <br>
+├── templates/                              # HTML templates (Jinja2)  <br>
+│   ├── index.html                          # Home / landing page <br>
+│   ├── login.html                          # Admin login page <br>
+│   ├── register.html                       # Admin registration page <br>
+│   ├── admin.html                          # Admin dashboard <br>
+│   ├── students.html                       # Student list & management  <br>
+│   └── configure_camera.html               # Camera configuration panel <br>
 │ <br>
-├── venv/                    # Python virtual environment (not committed) <br>
-├── app.py                   # Main Flask application <br>
-├── face_attendance.py       # Face recognition logic (OpenCV) <br>
-├── Attendence.sql           # SQLite database schema & records <br>
-└── README.md                # Project documentation <br>
+├── venv/                                   # Python virtual environment (not committed) <br>
+├── app.py                                  # Main Flask application <br>
+├── face_attendance.py                      # Face recognition logic (OpenCV) <br>
+├── Attendence.sql                             # SQLite database schema & records <br>
+└── README.md                               # Project documentation <br>
 
 
 
