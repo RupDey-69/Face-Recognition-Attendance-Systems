@@ -47,24 +47,24 @@ face-attendance-system/ <br>
 │
 ├── Image/                   # Student face images for recognition <br>
 │   └── Rup.jpg              # Sample registered student image <br>
-│
-├── static/                  # Frontend assets
-│   ├── script.js            # Client-side JavaScript
-│   └── style.css            # Stylesheet
-│
-├── templates/               # HTML templates (Jinja2)
-│   ├── index.html           # Home / landing page
-│   ├── login.html           # Admin login page
-│   ├── register.html        # Admin registration page
-│   ├── admin.html           # Admin dashboard
-│   ├── students.html        # Student list & management
-│   └── configure_camera.html # Camera configuration panel
-│
-├── venv/                    # Python virtual environment (not committed)
-├── app.py                   # Main Flask application
-├── face_attendance.py       # Face recognition logic (OpenCV)
-├── Attendence.sql           # SQLite database schema & records
-└── README.md                # Project documentation
+│<br>
+├── static/                  # Frontend assets <br>
+│   ├── script.js            # Client-side JavaScript <br>
+│   └── style.css            # Stylesheetb <br>
+│ <br>
+├── templates/               # HTML templates (Jinja2)  <br>
+│   ├── index.html           # Home / landing page <br>
+│   ├── login.html           # Admin login page <br>
+│   ├── register.html        # Admin registration page <br>
+│   ├── admin.html           # Admin dashboard <br>
+│   ├── students.html        # Student list & management  <br>
+│   └── configure_camera.html # Camera configuration panel <br>
+│ <br>
+├── venv/                    # Python virtual environment (not committed) <br>
+├── app.py                   # Main Flask application <br>
+├── face_attendance.py       # Face recognition logic (OpenCV) <br>
+├── Attendence.sql           # SQLite database schema & records <br>
+└── README.md                # Project documentation <br>
 
 
 
