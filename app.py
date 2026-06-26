@@ -13,16 +13,16 @@ db = mysql.connector.connect(
 
 cursor = db.cursor()
 
-print("Database Connected")
+if db.is_connected():
+    print(" Database Connected Successfully")
 
-
-# HOME PAGE
+# HOME
 @app.route('/')
 def home():
     return render_template('index.html')
 
 
-# LOGIN PAGE 
+# LOGIN
 @app.route('/login')
 def login_page():
     return render_template('login.html')
@@ -34,44 +34,86 @@ def register():
     return render_template('register.html')
 
 
-
-# REGISTER STUDENT
+# REGISTER STUDENT (POST)
 @app.route('/register_student', methods=['POST'])
 def register_student():
 
-    name = request.form['name']
-    mobile = request.form['mobile']
-    email = request.form['email']
-    roll = request.form['roll']
-    father = request.form['father']
-    mother = request.form['mother']
-    course = request.form['course']
-    dob = request.form['dob']
-    address = request.form['address']
+    Name = request.form['name']
+    Mobile_Number = request.form['mobile']
+    Email = request.form['email']
+    Roll = request.form['roll']
+    Father = request.form['father']
+    Mother = request.form['mother']
+    Course = request.form['course']
+
+    Dob = request.form.get('dob')
+    if Dob == "":
+        Dob = None
+
+    Address = request.form['address']
 
     sql = """
-    INSERT INTO Attendence
-    (name,mobile,email,roll,father,mother,course,dob,address)
+    INSERT INTO Attendance
+    (name,mobile_number,email,roll,father,mother,course,dob,address)
     VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)
     """
 
-    values = (name, mobile, email, roll, father, mother, course, dob, address)
+    values = (
+        Name,
+        Mobile_Number,
+        Email,
+        Roll,
+        Father,
+        Mother,
+        Course,
+        Dob,
+        Address
+    )
 
     cursor.execute(sql, values)
     db.commit()
 
-    return redirect('/')
+    return redirect('/students')
 
 
 # VIEW STUDENTS
 @app.route('/students')
 def students():
-
-    cursor.execute("SELECT * FROM Attendence")
+    cursor.execute("SELECT * FROM Attendance")
     data = cursor.fetchall()
-
     return render_template("students.html", students=data)
+
+
+# CAMERA
+@app.route('/configure_camera')
+def configure_camera():
+    return render_template('configure_camera.html')
+
+
+# ADMIN
+@app.route('/admin')
+def admin():
+    return render_template('admin.html')
+
+
+# MARK ATTENDANCE (ADD THIS)
+@app.route('/mark_attendance')
+def mark_attendance():
+    return render_template('mark_attendance.html')
+
+
+# VIEW ATTENDANCE (ADD THIS)
+@app.route('/view_attendance')
+def view_attendance():
+    return render_template('view_attendance.html')
+
+
+# REPORTS (ADD THIS)
+@app.route('/reports')
+def reports():
+    return render_template('reports.html')
 
 
 if __name__ == "__main__":
     app.run(debug=True)
+    
