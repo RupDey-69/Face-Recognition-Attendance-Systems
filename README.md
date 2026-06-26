@@ -42,10 +42,11 @@
 
 # Structure Of Project  <br>
 
-face-attendance-system/
+
+face-attendance-system/ <br>
 │
-├── Image/                   # Student face images for recognition
-│   └── Rup.jpg              # Sample registered student image
+├── Image/                   # Student face images for recognition <br>
+│   └── Rup.jpg              # Sample registered student image <br>
 │
 ├── static/                  # Frontend assets
 │   ├── script.js            # Client-side JavaScript
@@ -64,16 +65,6 @@ face-attendance-system/
 ├── face_attendance.py       # Face recognition logic (OpenCV)
 ├── Attendence.sql           # SQLite database schema & records
 └── README.md                # Project documentation
-
-
-
-
-
-
-
-
-
-
 
 
 
