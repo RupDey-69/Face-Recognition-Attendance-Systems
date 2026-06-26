@@ -35,3 +35,93 @@
                    CST (Diploma) 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+
+
+
+
+
+#Structure Of Project  <br>
+
+face-attendance-system/
+│
+├── Image/                   # Student face images for recognition
+│   └── Rup.jpg              # Sample registered student image
+│
+├── static/                  # Frontend assets
+│   ├── script.js            # Client-side JavaScript
+│   └── style.css            # Stylesheet
+│
+├── templates/               # HTML templates (Jinja2)
+│   ├── index.html           # Home / landing page
+│   ├── login.html           # Admin login page
+│   ├── register.html        # Admin registration page
+│   ├── admin.html           # Admin dashboard
+│   ├── students.html        # Student list & management
+│   └── configure_camera.html # Camera configuration panel
+│
+├── venv/                    # Python virtual environment (not committed)
+├── app.py                   # Main Flask application
+├── face_attendance.py       # Face recognition logic (OpenCV)
+├── Attendence.sql           # SQLite database schema & records
+└── README.md                # Project documentation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
