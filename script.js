@@ -28,7 +28,7 @@ function logout()
 }
 
 
-/* ✅ Protect Dashboard */
+/*  Protect Dashboard */
 
 if (window.location.pathname === "/") {
     if (localStorage.getItem("loggedIn") !== "true") {
@@ -41,7 +41,7 @@ function goStudents() {
 }
 
 
-/* ✅ Date & Time */
+/*  Date & Time */
 
 function updateDateTime() {
     const now = new Date();
@@ -66,7 +66,7 @@ setInterval(updateDateTime, 1000);
 updateDateTime();
 
 
-/* ✅ Canvas animation safe */
+/*  Canvas animation safe */
 
 const canvas = document.getElementById("smokeCanvas");
 
