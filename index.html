@@ -35,9 +35,7 @@
                 </li>
 
 
-                <li>Mark Attendance</li>
 
-                <li>Attendance Details</li>
 
                 <li onclick="logout()" style="color:red;cursor:pointer;">Logout</li>
 
@@ -63,30 +61,27 @@
 
             <div class="feature-container">
 
-                <div class="feature-card">
-                    <i class="fas fa-user-plus"></i>
-                    <h3>Register Students</h3>
-                </div>
 
-                <div class="feature-card">
-                    <i class="fas fa-users"></i>
-                    <h3> Admin </h3>
-                </div>
 
-                <div class="feature-card">
-                    <i class="fas fa-camera"></i>
-                    <h3>Mark Attendance</h3>
+                <div class="feature-card" onclick="window.location.href='/admin'">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Admin Panel</h3>
                 </div>
 
 
+                <div class="feature-card">
+                    <i class="fas fa-list"></i>
+                    <h3>Mark  Attendance</h3>
+                </div>
 
+
+                
                 <div class="feature-card">
                     <i class="fas fa-list"></i>
                     <h3>View Attendance</h3>
                 </div>
 
-
-                <div class="feature-card">
+                <div class="feature-card" onclick="window.location.href='/configure_camera'">
                     <i class="fas fa-cog"></i>
                     <h3>Configure Camera</h3>
                 </div>
