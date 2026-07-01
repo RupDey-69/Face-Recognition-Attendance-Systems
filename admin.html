@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="../static/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="admin-container">
+
+        <!-- Header -->
+        <header class="admin-header">
+            <h1>Face Recognition Attendance System</h1>
+            <p>Administrator Control Panel</p>
+        </header>
+
+        <!-- Cards Section -->
+        <main class="admin-cards">
+
+            <div class="feature-card" onclick="location.href='/register_students'">
+                <i class="fas fa-users"></i>
+                <h3>Registered Students</h3>
+                <p>View all registered students</p>
+            </div>
+
+            <div class="feature-card" onclick="location.href='/configure_camera'">
+                <i class="fas fa-camera"></i>
+                <h3>Configure Camera</h3>
+                <p>Setup and test camera</p>
+            </div>
+
+            <div class="feature-card" onclick="location.href='/mark_attendance'">
+                <i class="fas fa-user-check"></i>
+                <h3>Mark Attendance</h3>
+                <p>Start attendance session</p>
+            </div>
+
+            <div class="feature-card" onclick="location.href='/view_attendance'">
+                <i class="fas fa-clipboard-list"></i>
+                <h3>View Attendance</h3>
+                <p>Check attendance records</p>
+            </div>
+
+            <div class="feature-card" onclick="location.href='/reports'">
+                <i class="fas fa-chart-line"></i>
+                <h3>Reports</h3>
+                <p>Generate attendance reports</p>
+            </div>
+
+            <div class="feature-card" onclick="location.href='/'">
+                <i class="fas fa-home"></i>
+                <h3>Back To Home</h3>
+                <p>Return to main page</p>
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
