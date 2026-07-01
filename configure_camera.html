@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configure Camera</title>
+
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Configure Camera</h1>
+            <p>Setup and test camera for face recognition attendance</p>
+        </div>
+
+        <div class="camera-section">
+
+            <div class="camera-preview">
+
+                <div class="preview-box">
+                    <h3>Camera Preview</h3>
+
+                    <div class="camera-placeholder">
+                        Camera Feed
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="camera-settings">
+
+                <h3>Camera Settings</h3>
+
+                <label>Camera Device</label>
+                <select>
+                    <option>Select Camera</option>
+                    <option>Default Webcam</option>
+                </select>
+
+                <label>Resolution</label>
+                <select>
+                    <option>640 x 480</option>
+                    <option>1280 x 720</option>
+                    <option>1920 x 1080</option>
+                </select>
+
+                <label>Face Detection Sensitivity</label>
+                <input type="range" min="1" max="10">
+
+                <div class="btn-group">
+                    <button class="start-btn">Start Camera</button>
+                    <button class="stop-btn">Stop Camera</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        const startBtn = document.querySelector('.start-btn');
+        const stopBtn = document.querySelector('.stop-btn');
+        const previewBox = document.querySelector('.camera-placeholder');
+
+        let stream;
+
+        startBtn.addEventListener('click', async () => {
+            try {
+                stream = await navigator.mediaDevices.getUserMedia({
+                    video: true
+                });
+
+                const video = document.createElement('video');
+                video.srcObject = stream;
+                video.autoplay = true;
+                video.playsInline = true;
+
+                video.style.width = "100%";
+                video.style.height = "100%";
+                video.style.objectFit = "cover";
+                video.style.borderRadius = "10px";
+
+                previewBox.innerHTML = "";
+                previewBox.appendChild(video);
+
+            } catch (err) {
+                alert("Camera access denied or camera not found!");
+                console.error(err);
+            }
+        });
+
+        stopBtn.addEventListener('click', () => {
+            if (stream) {
+                stream.getTracks().forEach(track => track.stop());
+            }
+
+            previewBox.innerHTML = "Camera Feed";
+        });
+    </script>
+
+</body>
+
+</html>
