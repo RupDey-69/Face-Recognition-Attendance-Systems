@@ -1,57 +1,5 @@
-# Face Attendance System
-
-## Folder Structure
-
-face-attendance-system/
-│
-├── Image/
-│   └── Rup.jpg
-│
-├── static/
-│   ├── script.js
-│   └── style.css
-│
-├── templates/
-│   ├── index.html
-│   ├── login.html
-│   ├── register.html
-│   ├── admin.html
-│   ├── students.html
-│   └── configure_camera.html
-│
-├── venv/
-├── app.py
-├── face_attendance.py
-├── Attendance.sql
-├── requirements.txt
-└── README.md
-
----
-
-## Required Packages
-
-Install the required packages using the following command:
-
-pip install Flask
-pip install opencv-python
-pip install face-recognition
-pip install face-recognition-models
-pip install numpy
-pip install Pillow
-pip install mysql-connector-python
-pip install pyttsx3
-pip install Werkzeug
-pip install Jinja2
-pip install click
-pip install itsdangerous
-pip install MarkupSafe
-pip install blinker
-
----
-
-## Recommended requirements.txt
-
 Flask==3.1.1
+gunicorn==23.0.0
 opencv-python==4.12.0.88
 face-recognition==1.3.0
 face-recognition-models==0.3.0
@@ -61,39 +9,9 @@ mysql-connector-python==9.4.0
 pyttsx3==2.99
 openpyxl==3.1.5
 imutils==0.5.4
-gunicorn==23.0.0
-
-
-Install using:
-
-pip install -r requirements.txt
-
----
-
-## If You Face Installation Errors
-
-Some systems may require the following packages before installing face_recognition:
-
-pip install cmake
-pip install dlib
-pip install face-recognition
-
----
-
-## Run the Project
-
-python app.py
-
-Open your browser and visit:
-
-http://127.0.0.1:5000
-
----
-
-## Thank You
-
-Thank you for using our Face Attendance System.
-
-If you encounter any issues or have suggestions for improvement, feel free to reach out.
-
-Happy Coding! 🚀
+Werkzeug==3.1.3
+Jinja2==3.1.6
+click==8.2.1
+itsdangerous==2.2.0
+MarkupSafe==3.0.2
+blinker==1.9.0
